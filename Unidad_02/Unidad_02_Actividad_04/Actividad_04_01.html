@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html land="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Página de Registro</title>
+	</head>
+	<body>
+		<h2>Completa tus datos personales</h2>
+		<section>
+			<p>
+				<form name="formulario" method="POST" action="http://iesbernaldo-lmsgi.000webhostapp.com/formularios.php">
+				<p>
+					Nombre <br><input type="text" name="nombre" required><br>
+					Apellidos <br><input type="text" name="apellidos" required><br>
+					Contraseña <br><input type="password" name="contraseña" required><br>
+					DNI <br><input type="text" maxlength="9" name="DNI" required><br>
+					Sexo <br><input type="radio" name="sexo" value="1" checked>Hombre<br>
+					<input type="radio" name="sexo" value="2" checked>Mujer<br>
+					<br><input type="checkbox" name="suscripcion" value="1" checked> Suscribirme al boletín de novedades
+					<br><br><input type="checkbox" name="condiciones" value="2" required> Acepto las condiciones de uso y el tratamiento de mis datos personales
+					<br><br><input type="submit" value="Enviar datos">
+					<input type="reset" value="Borrar los datos introducidos">
+				</p>
+			</p>
+		</section>
+	</body>
+</html>

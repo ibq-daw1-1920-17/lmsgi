@@ -1,0 +1,30 @@
+Actividad 1
+En esta actividad había que hacer un formulario que pide nombre, apellidos, dni
+y una contraseña, todos excepto la contraseña son un input de tipo text y el de la 
+contraseña es de tipo password, tambien pide escojer entre hombre o mujer, el cual es
+un input de tipo radio, y lo de la subscripción al boletin y los terminos de uso son
+checkboxes, había que utilizar una etiqueta especial en aquellos obligatorios de rellenar
+la cual es "required"
+Despues son inputs de tipo submmit y restart.
+Pregunta sobre el formulario hecho en esta actividad, esta pregunta está en el word.
+•¿Por qué crees que se solicita el método de envío POST? ¿Utilizarías tú el método GET?
+  Porque no tiene efectos secundarioss y ningún carácter especial.
+Actividad 2
+En esta Actividad había que hacer un formulario en el que hay que seleccionar una 
+provincia de una lista de estas, poner tu fecha de nacimiento y un tema de interes de
+una lista, junto a los botones submit y restart.
+La lista es un select, donde cada uno de los elementos tiene que ser definido, para que
+salga "- selecciona -" le puse en la etiqueta "selected="true" para que sea la
+seleccionada y disabled="disabled" para que esta no saliese en la lista al desplegarla
+y por tanto, no se pueda seleccionar.
+Para la fecha de nacimiento, el dia es un input text de 2 de maximo, una lista select de
+los meses y un input text de 4 caracteres,todo esto dentro de una etiqueta <p>
+Para la ultima lista es otro select igual a los anteriores pero con otros elementos
+Actividad 3
+En esta actividad había que hacer un buscador de google en html, para ello hice un
+formulario con metodo GET cuya accion lleve a "http://www.google.es/search", dentro de 
+este hice un input de tipo text cuyo nombre es "q", de question, ya que google es donde
+guarda lo que tiene que buscar, de esa forma al enviar los datos y ejecute la acción
+google identifica que la 1 contiene algo y lo busca.
+Actividad 4
+Esta actividad era implementar el anterior ejercicio al inicio de nuestra página

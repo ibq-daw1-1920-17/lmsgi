@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lmsgi:centros xmlns:lmsgi="http://www.lmsgi.net/document" 
+xmlns:IESNumero1="http://www.lmsgi.net/centros/IESNumero1"
+xmlns:CIFPdeAviles="http://www.lmsgi.net/centros/CIFPdeAviles"
+xmlns:IESDoctorFleming="http://www.lmsgi.net/centros/IESDoctorFleming"
+xmlns:BernaldoQuiros="http://www.lmsgi.net/centros/BernaldoQuiros"
+xmlns:CIFPSectoresIndustrialydeServicios="http://www.lmsgi.net/centros/CIFPSectoresIndustrialydeServicios"
+xmlns:IESSanchezLastra="https://www.lmsgi.net/centros/IESSanchezLastra">
+
+    <CIFPdeAviles:centro localidad="Aviles">
+        <CIFPdeAviles:alumnos>
+            <CIFPdeAviles:alumno>Martín López, Luisa </CIFPdeAviles:alumno>
+            <CIFPdeAviles:alumno>Viejo Pérez, Ernesto </CIFPdeAviles:alumno>
+        </CIFPdeAviles:alumnos>
+    </CIFPdeAviles:centro>
+
+    <IESNumero1:centro localidad="Gijón">
+        <IESNumero1:alumnos>
+            <IESNumero1:alumno>García Pérez, Ana </IESNumero1:alumno>
+            <IESNumero1:alumno>Fernández Uría, José Luis </IESNumero1:alumno>
+            <IESNumero1:alumno>Díaz del Olmo, Belén </IESNumero1:alumno>
+            <IESNumero1:alumno>Rodríguez Marqués, Lucía </IESNumero1:alumno>
+            <IESNumero1:alumno>Nava Domínguez, Fernando </IESNumero1:alumno>
+            <IESNumero1:alumno>García González, Eva </IESNumero1:alumno>
+            <IESNumero1:alumno>Criado Martínez, Bernardo </IESNumero1:alumno>
+        </IESNumero1:alumnos>
+    </IESNumero1:centro>
+    
+    <BernaldoQuiros:centro localidad="Mieres">
+        <BernaldoQuiros:alumnos>
+            <BernaldoQuiros:alumno>García del Riego, Clara </BernaldoQuiros:alumno>
+            <BernaldoQuiros:alumno>Rodríguez Nieto, Luciano </BernaldoQuiros:alumno>
+        </BernaldoQuiros:alumnos>
+    </BernaldoQuiros:centro>
+
+    <IESDoctorFleming:centro localidad="Oviedo">
+        <IESDoctorFleming:alumnos>
+            <IESDoctorFleming:alumno>González Rubiera, Pedro </IESDoctorFleming:alumno>
+        </IESDoctorFleming:alumnos>
+    </IESDoctorFleming:centro>
+
+    <CIFPSectoresIndustrialydeServicios:centro localidad="Gijón">
+        <CIFPSectoresIndustrialydeServicios:alumnos>
+            <CIFPSectoresIndustrialydeServicios:alumno>Gómez Lamela, Javier </CIFPSectoresIndustrialydeServicios:alumno>
+            <CIFPSectoresIndustrialydeServicios:alumno>Álvarez Cortés, Óscar </CIFPSectoresIndustrialydeServicios:alumno>
+        </CIFPSectoresIndustrialydeServicios:alumnos>
+    </CIFPSectoresIndustrialydeServicios:centro>
+
+    <IESSanchezLastra:centro localidad="Mieres">
+        <IESSanchezLastra:alumnos>
+            <IESSanchezLastra:alumno>Reigal Pérez, Sofía </IESSanchezLastra:alumno>
+        </IESSanchezLastra:alumnos>
+    </IESSanchezLastra:centro>
+
+</lmsgi:centros>

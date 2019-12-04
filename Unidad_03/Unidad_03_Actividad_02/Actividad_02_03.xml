@@ -11,10 +11,12 @@ xmlns:margarita="http://www.lmsgi.net/pizzeria/margarita">
         <barbacoa:ingrediente>Jamón</barbacoa:ingrediente>
         <barbacoa:ingrediente>Ternera</barbacoa:ingrediente>
     </barbacoa:pizza>
+
     <cuatroQuesos:pizza precio="7">
         <cuatroQuesos:ingrediente>Tomate</cuatroQuesos:ingrediente>
         <cuatroQuesos:ingrediente>Mezcla de cuatroQuesos</cuatroQuesos:ingrediente>
     </cuatroQuesos:pizza>
+
     <hawaiana:pizza precio="7">
         <hawaiana:ingrediente>Tomate</hawaiana:ingrediente>
         <hawaiana:ingrediente>Mozzarella</hawaiana:ingrediente>
@@ -22,6 +24,7 @@ xmlns:margarita="http://www.lmsgi.net/pizzeria/margarita">
         <hawaiana:ingrediente>Piña</hawaiana:ingrediente>
         <hawaiana:ingrediente>Queso</hawaiana:ingrediente>
     </hawaiana:pizza>
+
     <margarita:pizza precio="6">
         <margarita:pizza>Tomate</margarita:pizza>
         <margarita:pizza>Jamón</margarita:pizza>

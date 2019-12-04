@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lmsgi:asignaturas xmlns:lmsgi="http://www.lmsgi.net/document">
+    <asignatura xmlns:php="http://www.lmsgi.net/asignaturas/php">
+        <profesor>
+            <nombre>Luis</nombre>
+        </profesor>
+        <alumnos>
+            <nombre>Maria</nombre>
+            <nombre>Luisa</nombre>
+            <nombre>Marta</nombre>
+        </alumnos>
+    </asignatura>
+    <asignatura xmlns:clasexml="http://www.lmsgi.net/asignaturas/xml">
+        <profesor>
+            <nombre>Manu</nombre>
+        </profesor>
+        <alumnos>
+            <nombre>Jorgito</nombre>
+            <nombre>Juanito</nombre>
+            <nombre>Jaimito</nombre>
+        </alumnos>
+    </asignatura>
+</lmsgi:asignaturas>

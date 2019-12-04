@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lmsgi:pizzeria xmlns:lmsgi="http://www.lmsgi.net/document" 
+xmlns:barbacoa="http://www.lmsgi.net/pizzeria/barbacoa"
+xmlns:cuatroQuesos="http://www.lmsgi.net/pizzeria/cuatroQuesos"
+xmlns:hawaiana="http://www.lmsgi.net/pizzeria/hawaiana"
+xmlns:margarita="http://www.lmsgi.net/pizzeria/margarita">
+    <barbacoa:pizza precio="8">
+        <barbacoa:ingrediente>Salsa Barbacoa</barbacoa:ingrediente>
+        <barbacoa:ingrediente>Tomate</barbacoa:ingrediente>
+        <barbacoa:ingrediente>Mozzarella</barbacoa:ingrediente>
+        <barbacoa:ingrediente>Jamón</barbacoa:ingrediente>
+        <barbacoa:ingrediente>Ternera</barbacoa:ingrediente>
+    </barbacoa:pizza>
+    <cuatroQuesos:pizza precio="7">
+        <cuatroQuesos:ingrediente>Tomate</cuatroQuesos:ingrediente>
+        <cuatroQuesos:ingrediente>Mezcla de cuatroQuesos</cuatroQuesos:ingrediente>
+    </cuatroQuesos:pizza>
+    <hawaiana:pizza precio="7">
+        <hawaiana:ingrediente>Tomate</hawaiana:ingrediente>
+        <hawaiana:ingrediente>Mozzarella</hawaiana:ingrediente>
+        <hawaiana:ingrediente>Jamón</hawaiana:ingrediente>
+        <hawaiana:ingrediente>Piña</hawaiana:ingrediente>
+        <hawaiana:ingrediente>Queso</hawaiana:ingrediente>
+    </hawaiana:pizza>
+    <margarita:pizza precio="6">
+        <margarita:pizza>Tomate</margarita:pizza>
+        <margarita:pizza>Jamón</margarita:pizza>
+        <margarita:pizza>Queso</margarita:pizza>
+    </margarita:pizza>
+</lmsgi:pizzeria>

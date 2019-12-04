@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lmsgi:correo xmlns:lmsgi="http://www.lmsgi.net/document"
+xmlns:thu="http://www.lmsgi.net/thunderbird"
+xmlns:out="http://www.lmsgi.net/outlook"
+xmlns:evo="http://www.lmsgi.net/evolution">
+    <thu:mensajes>
+        <thu:mensaje>
+            <thu:destinatario>Ejemplo destinatario</thu:destinatario>
+            <thu:origen>Ejemplo origen</thu:origen>
+            <thu:asunto>Ejemplo asunto</thu:asunto>
+            <thu:cuerpo>Ejemplo cuerpo</thu:cuerpo>
+        </thu:mensaje>
+    </thu:mensajes>
+    <out:mensajes>
+        <out:mensaje>
+            <out:destinatario>Ejemplo destinatario</out:destinatario>
+            <out:origen>Ejemplo origen</out:origen>
+            <out:asunto>Ejemplo asunto</out:asunto>
+            <out:cuerpo>Ejemplo cuerpo</out:cuerpo>
+        </out:mensaje>
+    </out:mensajes>
+    <evo:mensajes>
+        <evo:mensaje>
+            <evo:destinatario>Ejemplo destinatario</evo:destinatario>
+            <evo:origen>Ejemplo origen</evo:origen>
+            <evo:asunto>Ejemplo asunto</evo:asunto>
+            <evo:cuerpo>Ejemplo cuerpo</evo:cuerpo>
+        </evo:mensaje>
+    </evo:mensajes>
+</lmsgi:correo>

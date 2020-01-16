@@ -1,11 +1,11 @@
-<?xmlversion="1.0" encoding="UTF-8"?>
+<?xmlversion = "1.0" encoding="UTF-8"?>
 <!DOCTYPE mensajes [
-<!ELEMENT mensajes (mensaje)>
-<!ELEMENT mensaje (de,hora,para,texto)>
+<!ELEMENT mensajes (mensaje+)>
+<!ELEMENT mensaje (de | hora | para | texto)*>
 <!ELEMENT de (#PCDATA)>
 <!ELEMENT para (#PCDATA)>
 <!ELEMENT hora (#PCDATA)>
-<!ELEMENT texto (#PCDATA* | strong*)*>
+<!ELEMENT texto (#PCDATA | strong)*>
 <!ELEMENT strong (#PCDATA)>
 ]>
 

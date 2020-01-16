@@ -1,4 +1,4 @@
-<?xmlversion="1.0" encoding="UTF-8"?>
+<?xmlversion = "1.0" encoding="UTF-8"?>
 <!DOCTYPE sistemaSolar [
 <!ELEMENT sistemaSolar (cuerpo*)>
 <!ELEMENT cuerpo ((planeta|satelite|asteroide)+)>

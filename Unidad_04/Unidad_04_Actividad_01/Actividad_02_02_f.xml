@@ -1,19 +1,19 @@
-<?xmlversion="1.0" encoding="UTF-8"?>
-<!DOCTYPEpaises [
-<!ELEMENT paises (pais)>
-<!ELEMENT pais (nombre, unionEuropea)>
+<?xmlversion = "1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+<!ELEMENT paises (pais+)>
+<!ELEMENT pais (nombre, unionEuropea?)>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT unionEuropea (#PCDATA)>
 ]>
 <paises>
-<pais>
-<nombre>España</nombre>
-<unionEuropea />
-</pais>
-<pais>
-<nombre>Noruega</nombre>
-</pais>
-<pais>
-<nombre>Austria</nombre>
-</pais>
+    <pais>
+        <nombre>España</nombre>
+        <unionEuropea />
+    </pais>
+    <pais>
+        <nombre>Noruega</nombre>
+    </pais>
+    <pais>
+        <nombre>Austria</nombre>
+    </pais>
 </paises>

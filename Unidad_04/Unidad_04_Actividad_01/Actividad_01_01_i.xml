@@ -11,4 +11,7 @@
     <cuerpo>
         <planeta>Tierra</planeta>
     </cuerpo>
+    <cuerpo>
+        <satelite>Tierra</satelite>
+    </cuerpo>
 </sistemaSolar>

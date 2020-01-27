@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultados [
+<!ELEMENT resultados (partido)+>
+<!ELEMENT partido (equipoVisitante, equipoLocal)>
+<!ELEMENT equipoVisitante (#PCDATA)>
+<!ELEMENT equipoLocal (#PCDATA)>
+]>
+
+<resultados>
+    <partido>
+        <equipoVisitante>Nottingham Presa: 0</equipoVisitante>
+        <equipoLocal>Inter de Mitente: 1</equipoLocal>
+    </partido>
+    <partido>
+        <equipoVisitante>Vodka Juniors: 3</equipoVisitante>
+        <equipoLocal>Sparta da Risa: 3 </equipoLocal>
+    </partido>
+    <partido>
+        <equipoVisitante>Water de Munich: 4</equipoVisitante>
+        <equipoLocal>Esteaua es del grifo: 2</equipoLocal>
+    </partido>
+</resultados>

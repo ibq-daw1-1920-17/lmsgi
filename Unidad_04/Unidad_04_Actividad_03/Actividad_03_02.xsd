@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Esa linea DTD dice que hay un elemento raiz complejo, receta, con 4 componentes simples 
+    en los cuales ingrediente y procedimiento tiene que existir al menos uno y de tiempo puede existir los que queramos 0,inf -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="titulo"></xs:element>
+    <xs:element name="ingrediente"></xs:element>
+    <xs:element name="procedimiento"></xs:element>
+    <xs:element name="tiempo"></xs:element>
+
+    <xs:element name="receta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo"></xs:element>
+                <xs:element ref="ingrediente" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="procedimiento" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="tiempo" minOccurs="0" maxOccurs="1"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

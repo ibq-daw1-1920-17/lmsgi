@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="calle"></xs:element>
+    <xs:element name="pais"></xs:element>
+    <xs:element name="codigo"></xs:element>
+    <xs:element name="nombre"></xs:element>
+
+    <xs:element name="etiqueta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="calle"></xs:element>
+                <xs:element ref="pais"></xs:element>
+                <xs:element ref="codigo"></xs:element>
+                <xs:element ref="nombre"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

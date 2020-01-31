@@ -9,12 +9,12 @@
 <!ATTLIST equipo jugadores IDREFS #IMPLIED>
 ]>
 <futbol>
-    <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+    <jugador nombre="Alfredo Di Stefano" codigo="ads"/>
     <jugador nombre="Edison Arantes do Nascimento"
         codigo="ean" />
     <jugador nombre="Diego Armando Maradona" codigo="dam" />
     <jugador nombre="Johan Cruyff" codigo="jc" />
-    <equipo nombre="Società Sportiva Calcio Napoli"
+    <equipo nombre="Societa Sportiva Calcio Napoli"
         jugadores="dam" />
     <equipo nombre="Futbol Club Barcelona"
         jugadores="jc dam" />

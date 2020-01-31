@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="nombres"></xs:element>
+    <xs:element name="apellidos"></xs:element>
+    <xs:element name="titulo"></xs:element>
+    <xs:element name="sello"></xs:element>
+    <xs:element name="artista"></xs:element>
+    <xs:attribute name="anio" type="xs:gYear"></xs:attribute>
+    <xs:attribute name="duracion" type="xs:string"></xs:attribute>
+
+    <xs:element name="compositor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombres"></xs:element>
+                <xs:element ref="apellidos"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="productor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombres"></xs:element>
+                <xs:element ref="apellidos"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="productores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="productor"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="compositores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="compositor"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cancion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo"></xs:element>
+                <xs:element ref="compositores"></xs:element>
+                <xs:element ref="productores"></xs:element>
+                <xs:element ref="sello"></xs:element>
+                <xs:element ref="artista"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="anio"></xs:attribute>
+            <xs:attribute ref="duracion"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

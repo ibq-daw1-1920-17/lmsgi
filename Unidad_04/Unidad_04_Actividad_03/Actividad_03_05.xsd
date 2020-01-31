@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="presentacion"></xs:element>
+    <xs:element name="datos_academicos"></xs:element>
+    <xs:element name="experiencia_laboral"></xs:element>
+    <xs:element name="lectura"></xs:element>
+    <xs:element name="deporte"></xs:element>
+    <xs:element name="otros"></xs:element>
+    <xs:element name="referencias"></xs:element>
+    <xs:attribute name="nacionalidad"></xs:attribute>
+
+    <xs:element name="cv">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="presentacion"></xs:element>
+                <xs:element ref="datos_academicos" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="experiencia_laboral" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="lectura" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="deporte" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="otros" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="referencias" minOccurs="0" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="nacionalidad"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>    

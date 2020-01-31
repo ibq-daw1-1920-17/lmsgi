@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="nombre"></xs:element>
+    <xs:element name="fechanacimiento"></xs:element>
+    <xs:element name="telefono"></xs:element>
+    <xs:element name="sexo"></xs:element>
+    <xs:attribute name="nacionalidad"></xs:attribute>
+    <xs:element name="numeroseguridadsocial"></xs:element>
+
+    <xs:element name="persona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"></xs:element>
+                <xs:element ref="fechanacimiento"></xs:element>
+                <xs:element ref="telefono" maxOccurs="unbounded" minOccurs="1"></xs:element>
+                <xs:element ref="sexo" minOccurs="0" maxOccurs="1"></xs:element>
+                <xs:element ref="numeroseguridadsocial" minOccurs="0" maxOccurs="1"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="nacionalidad"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="lista_de_personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="persona" maxOccurs="unbounded" minOccurs="1"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

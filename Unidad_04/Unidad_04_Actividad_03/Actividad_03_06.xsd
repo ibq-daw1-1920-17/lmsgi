@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="TITULO"></xs:element>
+    <xs:element name="AUTOR"></xs:element>
+    <xs:element name="EMAIL"></xs:element>
+    <xs:element name="VERSION"></xs:element>
+    <xs:element name="FECHA"></xs:element>
+    <xs:element name="QTEXT"></xs:element>
+    <xs:element name="A"></xs:element>
+    <xs:attribute name="id" type="xs:int"></xs:attribute>
+    <xs:attribute name="number" type="xs:int"></xs:attribute>
+
+    <xs:element name="INFO">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="TITULO"></xs:element>
+                <xs:element ref="AUTOR"></xs:element>
+                <xs:element ref="EMAIL"></xs:element>
+                <xs:element ref="VERSION"></xs:element>
+                <xs:element ref="FECHA"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Q">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="QTEXT"></xs:element>
+                <xs:element ref="A"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="PART">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Q" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="number"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="FAQ">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="INFO"></xs:element>
+                <xs:element ref="PART" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="number"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cancion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="Actividad_03_07.xsd"
+    anio="2008" duracion="4:47">
+    <titulo>Give it 2 me</titulo>
+    <compositores>
+        <compositor>
+            <nombres>Pharrel</nombres>
+            <apellidos>Williams</apellidos>
+        </compositor>
+    </compositores>
+    <productores>
+        <productor>
+            <nombres>Pharrel</nombres>
+            <apellidos>Williams</apellidos>
+        </productor>
+    </productores>
+    <sello>Warner Bros. Records</sello>
+    <artista>Madonna</artista>
+</cancion>

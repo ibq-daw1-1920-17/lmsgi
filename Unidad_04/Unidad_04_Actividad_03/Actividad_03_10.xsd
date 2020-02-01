@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Nombre"></xs:element>
+    <xs:element name="Direccion"></xs:element>
+    <xs:element name="Ciudad"></xs:element>
+    <xs:element name="CodPostal"></xs:element>
+    <xs:element name="descripcion"></xs:element>
+    <xs:element name="precio"></xs:element>
+    <xs:element name="cantidad"></xs:element>
+    <xs:element name="Observaciones"></xs:element>
+
+    <xs:attribute name="codigo" type="xs:string"></xs:attribute>
+    <xs:attribute name="fecha" type="xs:date"></xs:attribute>
+
+    <xs:element name="Producto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="descripcion"></xs:element>
+                <xs:element ref="precio"></xs:element>
+                <xs:element ref="cantidad"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="codigo"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Contenido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Producto" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Destino">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Nombre"></xs:element>
+                <xs:element ref="Direccion"></xs:element>
+                <xs:element ref="Ciudad"></xs:element>
+                <xs:element ref="CodPostal"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Ordenante">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Nombre"></xs:element>
+                <xs:element ref="Direccion"></xs:element>
+                <xs:element ref="Ciudad"></xs:element>
+                <xs:element ref="CodPostal"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Destino"></xs:element>
+                <xs:element ref="Ordenante"></xs:element>
+                <xs:element ref="Observaciones"></xs:element>
+                <xs:element ref="Contenido"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="fecha"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

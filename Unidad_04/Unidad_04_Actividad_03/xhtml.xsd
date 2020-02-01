@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="title"></xs:element>
+    <xs:attribute name="http-equiv" type="xs:string"></xs:attribute>
+    <xs:attribute name="content" type="xs:string"></xs:attribute>
+    <xs:attribute name="align"></xs:attribute>
+    <xs:attribute name="bgcolor"></xs:attribute>
+    <xs:element name="p"></xs:element>
+
+    <xs:element name="meta">
+        <xs:complexType>
+            <xs:attribute ref="http-equiv"></xs:attribute>
+            <xs:attribute ref="content"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="head">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="meta"></xs:element>
+                <xs:element ref="title"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="body">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="p" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="bgcolor"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="html">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="head"></xs:element>
+                <xs:element ref="body"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

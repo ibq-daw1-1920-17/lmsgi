@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="titulo"></xs:element>
+    <xs:element name="autor"></xs:element>
+    <xs:element name="formato"></xs:element>
+    <xs:element name="publicacion"></xs:element>
+
+    <xs:attribute name="tiempo" type="xs:string"></xs:attribute>
+    <xs:attribute name="unidad" type="xs:int"></xs:attribute>
+    <xs:attribute name="cantidad" type="xs:float"></xs:attribute>
+    <xs:attribute name="moneda" type="xs:string"></xs:attribute>
+    <xs:attribute name="href" type="xs:string"></xs:attribute>
+
+    <xs:element name="disponible">
+        <xs:complexType>
+            <xs:attribute ref="tiempo"/>
+            <xs:attribute ref="unidad"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="precio">
+        <xs:complexType>
+            <xs:attribute ref="cantidad"/>
+            <xs:attribute ref="moneda"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="descuento">
+        <xs:complexType>
+            <xs:attribute ref="cantidad"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="enlacelibro">
+        <xs:complexType>
+            <xs:attribute ref="href"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo"/> 
+                <xs:element ref="disponible"/> 
+                <xs:element ref="autor"/> 
+                <xs:element ref="formato"/> 
+                <xs:element ref="publicacion"/> 
+                <xs:element ref="precio"/> 
+                <xs:element ref="descuento"/> 
+                <xs:element ref="enlacelibro"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

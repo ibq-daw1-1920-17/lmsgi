@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation= "Actividad_03_11.xsd">
+    <titulo> Cien años de soledad </titulo>
+    <disponible tiempo="24" unidad="10"/>
+    <autor> Gabriel García Márquez </autor>
+    <formato> Rústica </formato>
+    <publicacion>1967 </publicacion>
+    <precio cantidad="39.99" moneda="euro"/>
+    <descuento cantidad="5"/>
+    <enlacelibro href="/exec/ISBN/84-473-0619-4"/>
+</libro>

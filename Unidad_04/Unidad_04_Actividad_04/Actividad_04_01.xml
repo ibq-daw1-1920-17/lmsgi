@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Actividad_04_01.xsd">
+
+    <alumno dni="99887766X" nota="3.50">
+        <nombre>Dario</nombre>
+        <apellidos>Fernández Álvarez</apellidos>
+    </alumno>
+
+    <alumno dni="11223344A " nota="6.75">
+        <nombre>Luis</nombre>
+        <apellidos>Álvarez García</apellidos>
+    </alumno>
+
+    <alumno dni="556677Z " nota="8.25">
+        <nombre>Pilar</nombre>
+        <apellidos>Rodríguez Menéndez</apellidos>
+    </alumno>
+</alumnos>

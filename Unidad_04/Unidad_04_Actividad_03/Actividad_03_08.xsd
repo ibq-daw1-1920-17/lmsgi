@@ -6,9 +6,9 @@
     <xs:element name="sello"></xs:element>
     <xs:element name="artista"></xs:element>
     <xs:attribute name="titulo" type="xs:string"></xs:attribute>
-    <xs:attribute name="anio" type="xs:int"></xs:attribute>
-    <xs:attribute name="dia" type="xs:int"></xs:attribute>
-    <xs:attribute name="mes" type="xs:int"></xs:attribute>
+    <xs:attribute name="anio" type="xs:string"></xs:attribute>
+    <xs:attribute name="dia" type="xs:string"></xs:attribute>
+    <xs:attribute name="mes" type="xs:string"></xs:attribute>
     <xs:attribute name="duracion" type="xs:string"></xs:attribute>
 
     <xs:element name="fecha">
@@ -78,7 +78,7 @@
     <xs:element name="cd">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="songs" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="songs"></xs:element>
                 <xs:element ref="fecha"></xs:element>
             </xs:sequence>
             <xs:attribute ref="titulo"></xs:attribute>

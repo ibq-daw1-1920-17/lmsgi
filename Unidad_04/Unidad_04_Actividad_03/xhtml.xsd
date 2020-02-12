@@ -3,9 +3,14 @@
     <xs:element name="title"></xs:element>
     <xs:attribute name="http-equiv" type="xs:string"></xs:attribute>
     <xs:attribute name="content" type="xs:string"></xs:attribute>
-    <xs:attribute name="align"></xs:attribute>
     <xs:attribute name="bgcolor"></xs:attribute>
-    <xs:element name="p"></xs:element>
+    <xs:attribute name="align" type="xs:string"></xs:attribute>
+    
+    <xs:element name="p">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="align" use="optional"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
 
     <xs:element name="meta">
         <xs:complexType>

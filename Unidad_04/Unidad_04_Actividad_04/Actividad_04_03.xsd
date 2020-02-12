@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="dosDecimales">
+        <xs:restriction base="xs:decimal">
+           <xs:fractionDigits value="2"></xs:fractionDigits>
+           <xs:minInclusive value="0.00"></xs:minInclusive>
+           <xs:maxInclusive value="10.00"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="noPresentado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="No presentado"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="nota">
+        <xs:union memberTypes="dosDecimales noPresentado"></xs:union>
+    </xs:simpleType>
+
+    <xs:simpleType name="dni">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d{7}|\d{8})[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="edad">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="15"></xs:minInclusive>
+            <xs:maxInclusive value="75"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="nombre"></xs:element>
+    <xs:element name="apellidos"></xs:element>
+    <xs:element name="comentario"></xs:element>
+    <xs:attribute name="dni" type="dni"></xs:attribute>
+    <xs:attribute name="nota" type="nota" ></xs:attribute>
+    <xs:attribute name="edad" type="edad"></xs:attribute>
+    <xs:attribute name="calle" type="xs:string"></xs:attribute>
+    <xs:attribute name="numero" type="xs:string"></xs:attribute>
+    <xs:attribute name="ciudad" type="xs:string"></xs:attribute>
+    <xs:attribute name="codigoPostal" type="xs:string"></xs:attribute>
+    
+    <xs:element name="direccion">
+        <xs:complexType>
+            <xs:attribute ref="calle"></xs:attribute>
+            <xs:attribute ref="numero"></xs:attribute>
+            <xs:attribute ref="ciudad"></xs:attribute>
+            <xs:attribute ref="codigoPostal"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"></xs:element>
+                <xs:element ref="apellidos"></xs:element>
+                <xs:element ref="comentario" minOccurs="0"></xs:element>
+                <xs:element ref="direccion" minOccurs="0" maxOccurs="1"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="edad" use="optional"></xs:attribute>
+            <xs:attribute ref="dni"></xs:attribute>
+            <xs:attribute ref="nota"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumno" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

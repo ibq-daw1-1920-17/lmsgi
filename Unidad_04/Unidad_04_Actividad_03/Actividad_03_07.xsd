@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="nombres"></xs:element>
-    <xs:element name="apellidos"></xs:element>
-    <xs:element name="titulo"></xs:element>
-    <xs:element name="sello"></xs:element>
-    <xs:element name="artista"></xs:element>
+    <xs:element name="nombres" type="xs:string"></xs:element>
+    <xs:element name="apellidos" type="xs:string"></xs:element>
+    <xs:element name="titulo" type="xs:string"></xs:element>
+    <xs:element name="sello" type="xs:string"></xs:element>
+    <xs:element name="artista" type="xs:string"></xs:element>
     <xs:attribute name="anio" type="xs:gYear"></xs:attribute>
     <xs:attribute name="duracion" type="xs:string"></xs:attribute>
 
@@ -29,7 +29,7 @@
     <xs:element name="productores">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="productor"></xs:element>
+                <xs:element ref="productor" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -37,11 +37,11 @@
     <xs:element name="compositores">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="compositor"></xs:element>
+                <xs:element ref="compositor" maxOccurs="unbounded"></xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
+    
     <xs:element name="cancion">
         <xs:complexType>
             <xs:sequence>

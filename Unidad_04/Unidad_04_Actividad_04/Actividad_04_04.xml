@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figuras xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Actividad_04_04.xsd">
+    <figura color="ABCDEF" tipoMime="image/jpg">
+        <nombre></nombre>
+        <lado></lado>
+        <altura></altura>
+        <base></base>
+    </figura>
+
+    <figura color="FFAA9B" tipoMime="image/png">
+        <nombre></nombre>
+        <lado></lado>
+        <altura></altura>
+    </figura>
+
+    <figura color="FFFFF" tipoMime="image/gif">
+        <nombre></nombre>
+        <radio></radio>
+    </figura>
+</figuras>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="coloresHex">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]|[A-F]){1,9}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoMime">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="image/(gif|png|jpg)"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="nombre" type="xs:string"></xs:element>
+    <xs:element name="lado" type="xs:string"></xs:element>
+    <xs:element name="altura" type="xs:string"></xs:element>
+    <xs:element name="radio" type="xs:string"></xs:element>
+    <xs:element name="base" type="xs:string"></xs:element>
+
+    <xs:attribute name="color" type="coloresHex"></xs:attribute>
+    <xs:attribute name="tipoMime" type="tipoMime"></xs:attribute>
+
+    <xs:element name="figura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                <xs:element ref="lado" minOccurs="0"></xs:element>
+                <xs:element ref="altura" minOccurs="0"></xs:element>
+                <xs:element ref="base" minOccurs="0"></xs:element>
+                <xs:element ref="radio" minOccurs="0"></xs:element>
+            </xs:sequence>
+            <xs:attribute ref="color" use="required"></xs:attribute>
+            <xs:attribute ref="tipoMime" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="figuras">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="figura" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

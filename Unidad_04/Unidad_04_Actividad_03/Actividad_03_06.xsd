@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="TITULO"></xs:element>
-    <xs:element name="AUTOR"></xs:element>
-    <xs:element name="EMAIL"></xs:element>
-    <xs:element name="VERSION"></xs:element>
-    <xs:element name="FECHA"></xs:element>
-    <xs:element name="QTEXT"></xs:element>
-    <xs:element name="A"></xs:element>
+
+    <xs:element name="TITULO" type="xs:string"></xs:element>
+    <xs:element name="AUTOR" type="xs:string"></xs:element>
+    <xs:element name="EMAIL" type="xs:string"></xs:element>
+    <xs:element name="VERSION" type="xs:string"></xs:element>
+    <xs:element name="FECHA" type="xs:string"></xs:element>
+    <xs:element name="QTEXT" type="xs:string"></xs:element>
+    <xs:element name="A" type="xs:string"></xs:element>
     <xs:attribute name="id" type="xs:int"></xs:attribute>
     <xs:attribute name="number" type="xs:int"></xs:attribute>
 

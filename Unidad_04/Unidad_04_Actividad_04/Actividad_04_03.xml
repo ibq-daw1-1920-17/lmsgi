@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Actividad_04_03.xsd">
+
+    <alumno dni="99887766X" nota="3.50" edad="45">
+        <nombre>Dario</nombre>
+        <apellidos>Fernández Álvarez</apellidos>
+        <comentario>Necesita mejorar</comentario>
+        <direccion calle="Comandante Vallespin" numero="5" ciudad="Oviedo" codigoPostal="33021"></direccion>
+    </alumno>
+
+    <alumno dni="11223344A" nota="6.75" edad="80">
+        <nombre>Luis</nombre>
+        <apellidos>Álvarez García</apellidos>
+        <comentario>Copió de Dario, Alfredo y Pilar</comentario>
+    </alumno>
+
+    <alumno dni="556677Z" nota="8.25">
+        <nombre>Pilar</nombre>
+        <apellidos>Rodríguez Menéndez</apellidos>
+        <comentario>Copió de todos</comentario>
+    </alumno>
+
+    <alumno dni="66554433T" nota="No presentado" edad="42">
+            <nombre>Alfredo</nombre>
+            <apellidos>Martínez González</apellidos>
+            <comentario>Estudió en Universidad de Oviedo</comentario>
+            <direccion calle="Galiana" numero="23" ciudad="Avilés" codigoPostal="33400"></direccion>
+    </alumno>
+</alumnos>

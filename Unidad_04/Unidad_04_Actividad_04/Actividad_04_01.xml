@@ -12,7 +12,7 @@ xsi:noNamespaceSchemaLocation="Actividad_04_01.xsd">
         <apellidos>Álvarez García</apellidos>
     </alumno>
 
-    <alumno dni="556677Z " nota="8.25">
+    <alumno dni="556677Z" nota="8.25">
         <nombre>Pilar</nombre>
         <apellidos>Rodríguez Menéndez</apellidos>
     </alumno>

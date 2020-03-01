@@ -1,0 +1,15 @@
+body {color: red; 
+    background-color: gray; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 
+    'Trebuchet MS', sans-serif;}
+ul {width: 22%; background-color: purple;}
+
+h1 {color: white; word-spacing: 40px; 
+    font-family: 'Comic Sans MS';}
+
+p {text-align: center; width: 27%; 
+    background-color: goldenrod;}
+
+h3 {font-style: italic; text-transform: lowercase; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}

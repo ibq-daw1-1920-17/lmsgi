@@ -1,0 +1,8 @@
+div {width: 400px; border: gray 3px solid;}
+a {padding-left: 25px; padding-right: 25px; 
+    background-color: lightgray;
+    color: black;
+    text-decoration: none;}
+a:hover {background-color: green;}
+a:active {background-color: green;}
+a:visited {background-color: white;}

@@ -1,6 +1,17 @@
 body {width: 960px;}
+
 h1{text-align: center;}
-div.columnaIzq {float: left; width: 260px;}
-div.columnaDer {float: right; width: 700px;}
+
+div.columnaIzq {float: left; 
+    width: 260px;
+}
+div.columnaDer {float: right; 
+    width: 700px;
+}
 ul.apartados{padding: 0px;}
-ul.apartados li {width: 29%; float: left; list-style-type: none; margin-right: 2%;}
+
+ul.apartados li {width: 29%; 
+    float: left; 
+    list-style-type: none; 
+    margin-right: 2%;
+}

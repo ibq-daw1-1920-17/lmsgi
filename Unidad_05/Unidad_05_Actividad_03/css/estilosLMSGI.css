@@ -1,0 +1,22 @@
+﻿body {font-family: "Segoe UI"; color: orange;}
+h4 {color: green;}
+a {text-decoration: none; color: orange;}
+nav {float: left; margin-right: 4%; float: left;
+    border: 1px solid lightgray; padding-right: 5px; margin: 0px;}
+nav ul {list-style-type: square; list-style-image:  url("../imagenes/carpeta.png");}
+nav ul:hover {background-color: gray;}
+
+article {border-bottom: orange solid 2px;}
+article ul.apuntes{list-style-type: square; list-style-image:  url("../imagenes/pdf.png");}
+article ul.actividades{list-style-type: square; list-style-image:  url("../imagenes/actividad.png");}
+article ul.videos{list-style-type: square; list-style-image:  url("../imagenes/enlace.png");}
+
+header {border: 1px solid lightgray;}
+aside {float: right; }
+section {float:left; width: 60%; border: 1px solid lightgray;}
+
+footer div {width: 100%; float: left;}
+footer div img {padding-left: 30%; padding-right: 30%;}
+footer div div {background-color: black;}
+footer div div em {float: left;}
+footer div div a {float: right;}

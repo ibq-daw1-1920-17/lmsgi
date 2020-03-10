@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html land="es">
+    <head>
+        <meta charset="UTF-8"/>
+		<title> Actividad_01 Unidad 5 Índice </title>
+    </head>
+    <body>
+        <h4>1.	Nombre del Instituto (Miies)</h4>
+        <p>//ies/nombre</p>
+
+        <h4>2.	Página web del Instituto (http://www.Miies.org)</h4>
+        <p>//ies/web</p>
+
+        <h4>3.	Nombre de los Ciclos Formativos (Administración de Sistemas Informáticos en Red, 
+            Desarrollo de Aplicaciones Web, Sistemas Microinformáticos y Redes)</h4>
+        <p>//ies/ciclos/ciclo/nombre</p>
+
+        <h4>4.	Siglas por las que se conocen los Ciclos Formativos (ASIR, DAW, SMR)</h4>
+        <p>//ies/ciclos/ciclo/@id</p>
+
+        <h4>5.	Años en los que se publicaron los decretos de título de los Ciclos Formativos (2009, 2010, 2008).</h4>
+        <p>//ies/ciclos/decretoTitulo/@id</p>
+
+        <h4>6.	Ciclos Formativos de Grado Medio (
+            <ciclo id="SMR"> 
+                <nombre>Sistemas Microinformáticos y Redes</nombre> 
+                <grado>Medio</grado> <decretoTitulo año="2008" /> 
+            </ciclo>). 
+                Se trata de obtener el elemento <ciclo> completo)</h4>
+        <p>//ies/ciclos/ciclo[@grado="Medio"]/*</p>
+
+        <h4>7.	Nombre de los Ciclos Formativos de Grado Superior 
+            (Administración de Sistemas Informáticos en Red, Desarrollo de Aplicaciones Web)</h4>
+        <p>//ies/ciclos/ciclo[@grado="Superior"]/*</p>
+
+        <h4>8.	Nombre de los Ciclos Formativos anteriores a 2010 
+            (Administración de Sistemas Informáticos en Red, Sistemas Microinformáticos y Redes)</h4>
+        <p>//ies/ciclos/ciclo/decretoTitulo[@año&lt;2010]/../nombre</p>
+
+        <h4>9.	Nombre de los Ciclos Formativos de 2008 o 2010 
+            (Desarrollo de Aplicaciones Web, Sistemas Microinformáticos y Redes)</h4>
+        <p>//ies/ciclos/ciclo/decretoTitulo[@año=208]/../nombre | //ies/ciclos/ciclo/decretoTitulo[@año=2010]/../nombre</p>
+
+</html>

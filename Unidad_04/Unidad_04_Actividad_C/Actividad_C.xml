@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Actividad_C.xsd">
+
+    <pedido fecha="2020-03-31" plazoRevision="10">
+        <sucursal nombreSucursal="">
+            <zonaExposicion>C\</zonaExposicion>
+            <zonaGestion>C\</zonaGestion>
+        </sucursal>
+        
+        <articulos>
+            <articulo codigoArticulo="ABC-987" numeroUnidades="2" precio="3.99"></articulo>
+        </articulos>
+        <nombreTrabajador>Juan Menendez</nombreTrabajador>
+    </pedido>
+
+    <pedido fecha="2020-04-27" plazoRevision="16">
+            <sucursal nombreSucursal="">
+                <zonaExposicion>C\</zonaExposicion>
+                <zonaGestion>C\</zonaGestion>
+            </sucursal>
+
+            <articulos>
+                <articulo codigoArticulo="AAA-239" numeroUnidades="1" precio="63.49"></articulo>
+            </articulos>
+            <nombreTrabajador>Juan Menendez</nombreTrabajador>
+        </pedido>
+
+</pedidos>

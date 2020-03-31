@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html land="es">
+    <head>
+        <meta charset="UTF-8"/>
+		<title> Actividad_04_02_y_03 </title>
+    </head>
+    <body>
+        <h3>2.- Explica esta línea:
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;</h3>
+        <ul>   
+            <li>Sirve para identificar que el archivo es un XML para los navegadores y como está codificado, es necesaria para que el xml funcione como tal.</li>
+        </ul>
+
+        <h3>3.- Explica esta línea y pon un ejemplo (de XML) suponiendo que todos los elementos son de tipo (#PCDATA) y no hay atributos:
+            &lt;!ELEMENT cv (presentacion, (datos_academicos | experiencia_laboral)+, (lectura|deportes|otros)*, referencias*)&gt;
+            </h3>
+        <ul>   
+            <li> cv es un elemento que tiene que tener de hijo a presentación, al menos uno de datos academicos o de experiencia_laboral, cualquier combinación de lectura, deportes y otros y tantas referencias como quiera.</li>
+            <li>
+                &lt;cv&gt;<br>
+                    &emsp;&lt;presentacion/&gt;<br>
+                    &emsp;&lt;datos_academicos/&gt;<br>
+                    &emsp;&lt;experiencia_laboral/&gt;<br>
+                    &emsp;&lt;lectura/&gt;<br>
+                    &emsp;&lt;otros/&gt;<br>
+                    &emsp;&lt;referencias/&gt;<br>
+                    &emsp;&lt;referencias/&gt;<br>
+                &lt;/cv&gt;
+            </li>
+        </ul>
+    </body>
+</html>

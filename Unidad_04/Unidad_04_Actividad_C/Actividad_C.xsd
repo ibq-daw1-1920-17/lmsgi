@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="codigoPedido">
+        <xs:restriction base="xs:string">
+            <xs:length value="8"></xs:length>
+            <xs:pattern value="\D.{7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="codigoArticulo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{3}-\d{3}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="observacionPedido">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="urgente"/>
+            <xs:enumeration value="incompleto"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="nombreTrabajador"></xs:element>
+    <xs:element name="zonaExposicion"></xs:element>
+    <xs:element name="zonaGestion"></xs:element>
+    <xs:element name="apellidos"></xs:element>
+    <xs:element name="observacion" type="observacionPedido"/>
+    <xs:element name="observacionArticulo"/>
+    <xs:attribute name="codigoPedido" type="codigoPedido"/>
+    <xs:attribute name="codigoArticulo" type="codigoArticulo"/>
+    <xs:attribute name="numeroUnidades" type="xs:int"/>
+    <xs:attribute name="precio" type="xs:float"/>
+    <xs:attribute name="nombreSucursal" type="xs:string"/>
+    <xs:attribute name="fecha" type="xs:date"/>
+    <xs:attribute name="plazoRevision" type="xs:int"/>
+    
+    <xs:element name="articulo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="observacionArticulo" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="codigoArticulo" use="required"/>
+            <xs:attribute ref="numeroUnidades" use="required"/>
+            <xs:attribute ref="precio" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="articulos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="articulo" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sucursal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="zonaExposicion" minOccurs="1"/>
+                <xs:element ref="zonaGestion" minOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute ref="nombreSucursal" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sucursal" minOccurs="1"></xs:element>
+                <xs:element ref="articulos" minOccurs="1"></xs:element>
+                <xs:element ref="nombreTrabajador" minOccurs="1"/>
+                <xs:element ref="observacion" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="fecha" use="required"/>
+            <xs:attribute ref="plazoRevision" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pedidos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="pedido" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

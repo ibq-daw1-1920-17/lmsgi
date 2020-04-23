@@ -1,0 +1,17 @@
+ul {list-style-type: none;}
+label {font-weight: bold; font-size: 10px;}
+label.titulo {font-size: 15px;}
+div > span{display: block; margin: 3px;}
+span > label {display: block; margin: 3px} 
+span.requerido{color: red;}
+input:focus {border-color: #E6B700;
+             border-style: solid;
+             border-width: 4px;}
+
+li {border-top-color: lightgray; 
+    border-top-style: solid; 
+    padding:10px;
+    }
+li:hover {background-color: #FF9;}
+ul li p.ayuda {display: none;}
+ul li:hover p.ayuda {display: block;}

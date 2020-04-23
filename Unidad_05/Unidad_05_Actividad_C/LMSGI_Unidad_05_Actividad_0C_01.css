@@ -1,0 +1,7 @@
+body {font-style: Arial, Helvetica, sans-serif; font: 1em; line-height: 1.3}
+p {color: #555}
+#principal p {color: #336699}
+:link {color: #CC3300}
+#principal em{background-color:#FFFFCC; padding:1em}
+em.segundo {background-color:#FFCC99; padding: 1em; border: 1px solid #FF9900}
+div.divisor span {font-weight: bold;}
